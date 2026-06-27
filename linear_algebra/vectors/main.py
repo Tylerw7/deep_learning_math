@@ -10,3 +10,8 @@
 # a vector is not the same as a coordinate point [1,2] does not start at at 1.
 
 
+# In AI, vectors represent everything:
+
+# A word → a vector of 768 numbers (its "meaning" in embedding space)
+# An image → a vector of millions of pixel values
+# A user → a vector of preferences

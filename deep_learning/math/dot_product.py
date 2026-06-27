@@ -9,6 +9,11 @@ import torch
 # The dot product between two vectors will always be a single number.
 # They also have to have the same dimensionality or vector length.
 
+# The dot product of two vectors tells you how similar they are.
+# This is literally how search engines, recommendation systems, and RAG work 
+# -- find vectors with high dot products.
+
+
 # !! You can however perform dot product on a 2D vector, This is done in CNN.
 
 # Example:
