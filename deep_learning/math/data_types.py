@@ -1,4 +1,5 @@
 import torch
+import numpy as np
 
 # scalar - 7 " a number"
 # vector - on physical dimension
@@ -35,3 +36,38 @@ import torch
 #-------------------
 # Example in numpy and pytorch
 #-------------------
+
+# create a vector
+nv = np.array([[1,2,3,4]])
+print(nv), print( ' ')
+
+# transpose it
+print(nv.T), print(' ') # This is only transposing for the print statement though
+
+# This will transpose the code in memory
+nvT = nv.T 
+print(nvT)
+
+# Multiple lines
+nM = np.array([[1,2,3,4],
+               [5,6,7,8]])
+print('--- 2D array ---')
+print(nM)
+print(nM.T)
+
+
+# ------------
+# PyTorch
+# ------------
+
+# create a vector
+tv = torch.tensor([[1,2,3,4]])
+print(tv), print(' ')
+
+# transpose it
+print(tv.T), print(' ')
+
+
+print(f'Variable Type of nv {type(nv)}')
+print(f'Variable Type of nM {type(nM)}')
+print(f'Variable Type of tv {type(tv)}')
